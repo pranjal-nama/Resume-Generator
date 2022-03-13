@@ -43,7 +43,6 @@ inpFile.addEventListener("change", function () {
 		previewImage.style.display = "block";
 
 		reader.addEventListener("load", function () {
-			console.log(this);
 			previewImage.setAttribute("src", this.result);
 		});
 
@@ -52,5 +51,31 @@ inpFile.addEventListener("change", function () {
 		previewDefaultText.style.display = null;
 		previewImage.style.display = null;
 		previewImage.setAttribute("src", "");
+	}
+});
+
+const signInpFile = document.getElementById("signInpFile");
+const previewCont = document.getElementById("signPreview");
+const previewSign = previewCont.querySelector(".sign-preview__sign");
+const previewDefText = previewCont.querySelector(".sign-preview__default-text");
+
+signInpFile.addEventListener("change", function () {
+	const file = this.files[0];
+
+	if (file) {
+		const reader = new FileReader();
+
+		previewDefText.style.display = "none";
+		previewSign.style.display = "block";
+
+		reader.addEventListener("load", function () {
+			previewSign.setAttribute("src", this.result);
+		});
+
+		reader.readAsDataURL(file);
+	} else {
+		previewDefText.style.display = null;
+		previewSign.style.display = null;
+		previewSign.setAttribute("src", "");
 	}
 });
