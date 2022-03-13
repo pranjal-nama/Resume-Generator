@@ -1,3 +1,7 @@
+body {
+	background: #666699;
+}
+
 .image-preview {
 	width: 300px;
 	min-height: 100px;
