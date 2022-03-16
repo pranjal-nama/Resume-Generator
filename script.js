@@ -1,30 +1,49 @@
-function addNewWEField() {
-	let newNode = document.createElement("textarea");
-	newNode.classList.add("form-control");
-	newNode.classList.add("weField");
-	newNode.classList.add("mt-2");
-	newNode.setAttribute("rows", 3);
-	newNode.setAttribute("placeholder", "Type here");
+// function addNewWEField() {
+// 	let newNode = document.createElement("div");
+// 	newNode.classList.add("row");
+// 	newNode.setAttribute("id", "weform");
 
-	let weOb = document.getElementById("we");
-	let weAddButtonOb = document.getElementById("weAddButton");
+// 	let divForCompName = document.createElement("div");
+// 	document.getElementById("weform").appendChild(divForCompName);
+// 	divForCompName.classList.add("form-group");
+// 	divForCompName.classList.add("mt-2");
+// 	divForCompName.classList.add("col-md-4");
+// 	divForCompName.setAttribute("id", "company");
 
-	weOb.insertBefore(newNode, weAddButtonOb);
+// 	console.log(divForCompName);
+
+	// let labelForCompName = document.createElement("label");
+	// document.getElementById("company").appendChild(labelForCompName);
+	// labelForCompName.setAttribute("for", "companyName");
+	// labelForCompName.innerText = "Company Name";
+
+	// let weOb = document.getElementById("we");
+	// let weAddButtonOb = document.getElementById("weAddButton");
+
+	// weOb.insertBefore(newNode, weAddButtonOb);
 }
 
-function addNewAQField() {
-	let newNode = document.createElement("textarea");
-	newNode.classList.add("form-control");
-	newNode.classList.add("aqField");
-	newNode.classList.add("mt-2");
-	newNode.setAttribute("rows", 3);
-	newNode.setAttribute("placeholder", "Type here");
+// 	newNode.classList.add("form-control");
+// 	newNode.classList.add("weField");
+// 	newNode.classList.add("mt-2");
+// 	newNode.setAttribute("rows", 3);
+// 	newNode.setAttribute("placeholder", "Type here");
 
-	let aqOb = document.getElementById("aq");
-	let aqAddButtonOb = document.getElementById("aqAddButton");
+// }
 
-	aqOb.insertBefore(newNode, aqAddButtonOb);
-}
+// function addNewAQField() {
+// 	let newNode = document.createElement("textarea");
+// 	newNode.classList.add("form-control");
+// 	newNode.classList.add("aqField");
+// 	newNode.classList.add("mt-2");
+// 	newNode.setAttribute("rows", 3);
+// 	newNode.setAttribute("placeholder", "Type here");
+
+// 	let aqOb = document.getElementById("aq");
+// 	let aqAddButtonOb = document.getElementById("aqAddButton");
+
+// 	aqOb.insertBefore(newNode, aqAddButtonOb);
+// }
 
 const inpFile = document.getElementById("inpFile");
 const previewContainer = document.getElementById("imagePreview");
